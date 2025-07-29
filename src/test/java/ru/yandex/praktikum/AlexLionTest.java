@@ -26,7 +26,7 @@ class AlexLionTest {
         AlexLion alex = new AlexLion(felineMock);
 
         assertEquals(0, alex.getKittens(), "У Алекса не должно быть львят");
-        verify(felineMock, never()).getKittens(); // Убедимся, что родительский метод не вызывается
+        verify(felineMock, never()).getKittens();
     }
 
     @Test
