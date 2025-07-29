@@ -14,6 +14,8 @@ class LionParameterizedTest {
             "Самец, true",
             "Самка, false"
     })
+
+
     @DisplayName("Проверка наличия гривы в зависимости от пола")
     void lionManeDependsOnSex(String sex, boolean expectedHasMane) throws Exception {
         Predator predator = mock(Predator.class);
